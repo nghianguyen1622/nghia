@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0fc0555f-00d1-42e8-bd79-d8eb0a39787b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SsVfNuwHQ2h8Zyubld3v5QeaZm" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\nguyen van nghia\academy\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fc0555f-00d1-42e8-bd79-d8eb0a39787b" name="Default Changelist" comment="" />
+      <created>1572352392341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572352392341</updated>
+      <workItem from="1572352394184" duration="1507000" />
+      <workItem from="1572355111975" duration="1707000" />
+      <workItem from="1572367307353" duration="15027000" />
+      <workItem from="1572416103349" duration="15932000" />
+      <workItem from="1572440403367" duration="3316000" />
+      <workItem from="1572456272560" duration="4151000" />
+      <workItem from="1572540415792" duration="9474000" />
+      <workItem from="1572549963329" duration="4558000" />
+      <workItem from="1572718980286" duration="8674000" />
+      <workItem from="1572772289029" duration="677000" />
+      <workItem from="1572804535498" duration="7434000" />
+      <workItem from="1572879325831" duration="25825000" />
+      <workItem from="1572932747281" duration="1135000" />
+      <workItem from="1572943737194" duration="1209000" />
+      <workItem from="1572959537679" duration="2537000" />
+      <workItem from="1572969433922" duration="1172000" />
+      <workItem from="1572975750225" duration="940000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
