@@ -359,8 +359,13 @@ img {
           padding: 0;
           padding-left: 2em; } }
       .header-area .academy-main-menu .classy-navbar .classynav ul li a {
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 600;
         text-transform: uppercase; }
+.header-area .academy-main-menu .classy-navbar .classynav ul li.active a {
+        color: #61ba6d;
+}
+
         .header-area .academy-main-menu .classy-navbar .classynav ul li a:hover, .header-area .academy-main-menu .classy-navbar .classynav ul li a:focus {
           color: #69bc5f; }
     .header-area .academy-main-menu .classynav {
@@ -2307,8 +2312,66 @@ margin-left: 15px;
   height: 200px;
   width: 200px;
 }
+/*-----lab1 design----*/
+.desi{
+  height: 700px;
+  width: 1100px;
+  border: 1px solid #b9bbbe;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.desi .load{
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #b9bbbe;
+  float: left;
+  background: #f5f7fa;
+}
+.desi .load p{
+  margin-left: 100px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.desi .img-desi{
+  float: left;
+  clear: right;
+}
+.desi .down{
+  float: left;
+  margin-left: 30px;
+  height: 600px;
+  border-left: 1px solid #b9bbbe;
+}
+.desi .down .dowload1{
+  float: left;
+  background: #61ba6d;
+  margin-top: 300px;
+  margin-left: 20px;
+}
+.desi1{
+  height: 110px;
+  width: 1100px;
+  border: 1px solid #b9bbbe;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.desi1 .load1{
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #b9bbbe;
+  float: left;
+  background: #f5f7fa;
+}
+.desi1 .load1 p{
+  margin-left: 100px;
+  margin-top: 5px;
+  font-size: 16px;
+}
 
-
-
+.desi1 .down1 .dowload1{
+  float: left;
+  background: #61ba6d;
+  margin-left: 500px;
+}
 
 

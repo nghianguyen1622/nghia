@@ -448,7 +448,7 @@ img {
             .classynav ul li a {
                 font-weight: 700;
                 text-transform: uppercase;
-                &:hover,
+                &:hover,&:active,
                 &:focus {
                     color: $hover-color;
                 }
