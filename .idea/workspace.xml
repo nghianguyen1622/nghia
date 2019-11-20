@@ -19,7 +19,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../teml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../template_webdienthoai" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,6 +74,13 @@
       <workItem from="1572984588865" duration="35000" />
       <workItem from="1573028106973" duration="17000" />
       <workItem from="1573062963633" duration="12017000" />
+      <workItem from="1573094973581" duration="2218000" />
+      <workItem from="1573099335070" duration="10000" />
+      <workItem from="1573378326274" duration="769000" />
+      <workItem from="1574010357508" duration="10606000" />
+      <workItem from="1574142851298" duration="960000" />
+      <workItem from="1574253824569" duration="5489000" />
+      <workItem from="1574261396436" duration="14251000" />
     </task>
     <servers />
   </component>

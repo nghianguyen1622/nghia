@@ -1091,6 +1091,7 @@ img {
 .contact-content {
   background-color: #eef3f6;
   padding: 100px 50px;
+  margin-top: 300px;
   position: relative;
   z-index: 15;
   top: -200px;
@@ -1345,7 +1346,7 @@ a:hover,a:focus{
 }
 .tab .nav-tabs{
   border: none;
-  border-bottom: 2px solid #61ba6d;
+  border-bottom: 1px solid #61ba6d;
   margin-top: 40px;
   margin-left: 20px;
   height: 33px;
@@ -1358,7 +1359,7 @@ a:hover,a:focus{
   font-weight: 600;
   color: #293241;
   text-transform: uppercase;
-  border: 2px solid #e6e5e1;
+  border: 1px solid #e6e5e1;
   border-bottom: none;
   border-radius: 5px 5px 0 0;
   z-index: 1;
@@ -1369,7 +1370,7 @@ a:hover,a:focus{
 .tab .nav-tabs li.active a{
   background: #fff;
   color: #61ba6d;
-  border: 2px solid #61ba6d;
+  border: 1px solid #61ba6d;
   border-bottom-color: transparent;
 }
 .tab .nav-tabs li a:before{
@@ -1404,7 +1405,7 @@ a:hover,a:focus{
   }
   .tab .nav-tabs li a{
     margin: 0;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
   }
   .tab .nav-tabs li a:before{
     content: "";
@@ -1423,7 +1424,7 @@ a:hover,a:focus{
 }
 .tab .nav-ta{
   border: none;
-  border-bottom: 2px solid #61ba6d;
+  border-bottom: 1px solid #61ba6d;
   margin-top: 100px;
   margin-left: 20px;
   height: 33px;
@@ -1436,7 +1437,7 @@ a:hover,a:focus{
   font-weight: 600;
   color: #293241;
   text-transform: uppercase;
-  border: 2px solid #e6e5e1;
+  border: 1px solid #e6e5e1;
   border-bottom: none;
   border-radius: 5px 5px 0 0;
   z-index: 1;
@@ -1448,7 +1449,7 @@ a:hover,a:focus{
 .tab .nav-ta li.active a{
   background: #fff;
   color: #61ba6d;
-  border: 2px solid #61ba6d;
+  border: 1px solid #61ba6d;
   border-bottom-color: transparent;
 }
 .tab .nav-ta li a:before{
@@ -1485,7 +1486,7 @@ a:hover,a:focus{
   }
   .tab .nav-ta li a{
     margin: 0;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
   }
   .tab .nav-ta li a:before{
     content: "";
@@ -1662,7 +1663,7 @@ a:hover,a:focus{
 }
 .tab .nav-ts{
   border: none;
-  border-bottom: 2px solid #61ba6d;
+  border-bottom: 1px solid #61ba6d;
   margin-top: 50px;
   margin-left: 20px;
   height: 33px;
@@ -1675,7 +1676,7 @@ a:hover,a:focus{
   font-weight: 600;
   color: #293241;
   text-transform: uppercase;
-  border: 2px solid #e6e5e1;
+  border: 1px solid #e6e5e1;
   border-bottom: none;
   border-radius: 5px 5px 0 0;
   z-index: 1;
@@ -1689,7 +1690,7 @@ a:hover,a:focus{
 .tab .nav-ts li.active a{
   background: #fff;
   color: #61ba6d;
-  border: 2px solid #61ba6d;
+  border: 1px solid #61ba6d;
   border-bottom-color: transparent;
 }
 .tab .nav-ts li a:before{
@@ -1725,7 +1726,7 @@ a:hover,a:focus{
   }
   .tab .nav-ts li a{
     margin: 0;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
   }
   .tab .nav-ts li a:before{
     content: "";
@@ -1993,6 +1994,53 @@ margin-left: 15px;
 /*-----lab3---------*/
 /*Ex1*/
 /*Ex1-Im*/
+.hb-menu{
+  width: 1200px;
+  height: 70px;
+  background: #34ce57;
+  color: #ffffff;
+}
+.hb-menu .ser{
+  float: left;
+  clear: right;
+  width: 350px;
+  height: 70px;
+  background: #0b0b0b;
+}
+.hb-menu .ser h6{
+  font-size: 30px;
+  color: floralwhite;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+  clear: right;
+}
+.hb-menu .o-ser{
+  float: left;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.hb-menu ul li{
+  float: left;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.hb-menu .ser input{
+  font-size: 13px;
+  border-radius: 10px;
+}
+.hb-menu .ser button{
+  width: 50px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+.hb-menu ul li a{
+  font-size: 18px;
+
+}
+.hb-menu ul li:hover{
+  color: #0b0b0b;
+}
 .note{
   width: 1200px;
   margin-top: 30px;
@@ -2000,11 +2048,17 @@ margin-left: 15px;
 .note .head{
   height: 40px;
   width: 1200px;
-  border: 1px solid #ffffff;
   box-shadow: 0px 5px 4px #b9bbbe;
 }
 .note .head h6{
-  margin-top: 10px;
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.note .head1 h6{
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 .line1{
   width: 1200px;
@@ -2029,7 +2083,6 @@ margin-left: 15px;
     float: left;
     width: 420px;
     height: 40px;
-    border: 1px solid #ffffff;
     box-shadow: 0px 5px 4px #b9bbbe;
 }
 
@@ -2054,10 +2107,7 @@ margin-left: 15px;
 .text-tainghe p:hover{
     color: #61ba6d;
 }
-.next-line1{
-    width: 400px;
-    margin-top: 30px;
-}
+
 .next-line11{
     float: left;
     clear: right;
@@ -2089,6 +2139,46 @@ margin-left: 15px;
 .text-line2 b:hover{
     color: #61ba6d;
 }
+.option-footer{
+  width: 1200px;
+  height: 300px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  float: left;
+  margin-top: 50px;
+  background: #34ce57;
+}
+.option-footer p{
+  color: white;
+}
+.option-footer .footer-widget12{
+  width: 28%;
+  margin-left: 55px;
+  margin-top: 30px;
+  height: 280px;
+  float: left;
+  clear: right;
+}
+.option-footer .list-menu{
+  float: left;
+  margin-top: 20px;
+}
+.option-footer .list-menu input{
+  height: 30px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.option-footer .list-menu textarea{
+  width: 200px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.option-footer .list-menu .ykien{
+  width: 100%;
+}
+.option-footer .list-menu button{
+  width: 50px;
+}
 /*===ex2===*/
 .line3{
   width: 1200px;
@@ -2105,7 +2195,10 @@ margin-left: 15px;
   margin-left: 40px;
 }
 .line3 p{
-  font-size: 18px;
+  font-size: 15px;
+}
+.line3 span{
+  font-size: 13px;
 }
 .line3 p:hover{
   color: #61ba6d;
@@ -2135,13 +2228,17 @@ margin-left: 15px;
     margin-left: 10px;
 }
 .containerDemo .logoDemo h4{
-    color: #1c7430;
+    color: #ffffff;
+    margin-top: 15px;
+    font-size: 30px;
 }
 .containerDemo .MENU{
     float: left;
     height: 70px;
     width: 100%;
-    background: #b1dfbb;
+  background: #61ba6d;
+  background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+  background: linear-gradient(to right, #61ba6d, #83c331);
     border-radius: 3px;
 }
 .containerDemo .MENU ul{
@@ -2153,7 +2250,6 @@ margin-left: 15px;
 }
 .containerDemo .MENU>ul{
     height: 50px;
-
 }
 .containerDemo .MENU ul li{
     list-style: none;
@@ -2163,33 +2259,38 @@ margin-left: 15px;
 }
 .containerDemo .MENU ul li a{
     height: 40px;
-    padding: 0px 15px;
+    margin-left: 35px;
     font-weight: bold;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
 }
-.containerDemo .MENU ul li:hover{
-    cursor: pointer;
-    animation: menucolor 0.5s;
-}
+
 .containerDemo .MENU ul li:hover>a{
-    color: #61ba6d;
+    color: #0b0b0b;
+}
+.containerDemo .MENU .sub{
+  width: 150px;
+  height: 50px;
 }
 .containerDemo .MENU .sub ul {
     position: absolute;
-    top: 80px;
+    width: 100%;
     visibility: hidden;
 }
 .containerDemo .MENU .sub:hover ul{
     visibility: visible;
 }
 .containerDemo .MENU .sub ul li{
-    float: none;
-    background: #b1dfbb;
+  float: none;
+  margin-top: 1px;
+  width: 250px;
+  background: #61ba6d;
+  background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+  background: linear-gradient(to right, #61ba6d, #83c331);
 }
 .containerDemo .timkiem{
     float: left;
-    margin-left: 200px;
+    margin-left: 100px;
     margin-top: 30px;
 }
 .containerDemo .otim{
@@ -2203,6 +2304,33 @@ margin-left: 15px;
     width: 50px;
     font-size: 11px;
 }
+/*=====lien ket=====*/
+.dan-lienket{
+  float: left;
+  width: 100%;
+  height: 30px;
+}
+.dan-lienket h7{
+  font-size: 14px;
+}
+/*=====option*/
+.option{
+  width: 100%;
+  margin-top: 10px;
+}
+.w3-content{
+  float: left;
+  clear: right;
+}
+.option .img-pre{
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.option .img-pre2\.0{
+  margin-top: 40px;
+}
+
 /*====option1====*/
 .option1{
   float: left;
@@ -2258,6 +2386,33 @@ margin-left: 15px;
   width: 135px;
   margin-top: 15px;
 }
+/*======option1.1====*/
+.option1\.1{
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+  height: 25px;
+}
+.option1\.1 .loc{
+  float: left;
+  clear: right;
+}
+.option1\.1 .chose{
+  float: left;
+  margin-left: 50px;
+}
+.option1\.1 .chose .mucgia{
+  float: left;
+  margin-left: 10px;
+  clear: right;
+}
+.option1\.1 .chose .mucgia option{
+  font-size: 13px;
+
+}
+.option1\.1 .chose .mucgia select{
+
+}
 /*====option2===*/
 .option2{
   width: 100%;
@@ -2265,14 +2420,20 @@ margin-left: 15px;
   float: left;
   margin-top: 30px;
 }
+.option2 .lean1{
+  width: 100%;
+  height: 40px;
+}
 .option2 .sell{
   float: left;
+  clear: right;
   height: 40px;
   width:250px;
   background: #b1dfbb;
 }
 .option2 .sell h6{
   margin-top: 10px;
+  margin-left: 30px;
 }
 .option2 .khungDemo{
   width: 100%;
@@ -2290,7 +2451,9 @@ margin-left: 15px;
   height: 30px;
   width: 170px;
   margin-top: 170px;
-  background: #1c7430;
+  background: #61ba6d;
+  background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+  background: linear-gradient(to right, #61ba6d, #83c331);
 }
 .option2 .khuyenmaiDemo span{
   color: #ffffff;
@@ -2308,9 +2471,119 @@ margin-left: 15px;
   text-align: center;
   color: #1c7430;
 }
+.option2 .thongtinsp a{
+  color: #1c7430;
+}
 .option2 .img-lap img:hover{
-  height: 200px;
+  margin-top: -5px;
+}
+/*=======option3====*/
+.option3{
+  width: 1100px;
+  float: left;
+  margin-top: 30px;
+}
+.option3 .nex-prewiew{
+  float: left;
+  margin-left: 890px;
+}
+.option3 .nex-prewiew input{
+  width: 30px;
+  background: white;
+  border: 1px solid #b9bbbe;
+}
+/*======option4====*/
+.option4 {
+  height: 50px;
+  width: 680px;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 10s infinite;
+}
+.option4 #div1 p{
+  height: 50px;
+}
+.option4\.1 {
+  float: left;
+  height: 50px;
+  width: 300px;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove1 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove1 4s infinite;
+}
+.option4\.1 #div2 p{
+  height: 50px;
+}
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: linear;}
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: linear;}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 500px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 500px;}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove1 {
+  from {left: 0px;}
+  to {left: 30px;}
+}
+
+/* Standard syntax */
+@keyframes mymove1 {
+  from {left: 0px;}
+  to {left: 30px;}
+}
+/*=====optinon5======*/
+  .option5{
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    float: left;
+    margin-top: 50px;
+    background: #ececf6;
+  }
+  .option5 .footer-widget12{
+    width: 28%;
+    margin-left: 55px;
+    margin-top: 30px;
+    height: 280px;
+    float: left;
+    clear: right;
+  }
+  .option5 .list-menu{
+    float: left;
+    margin-top: 20px;
+  }
+  .option5 .list-menu input{
+    height: 30px;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+.option5 .list-menu textarea{
   width: 200px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.option5 .list-menu .ykien{
+  width: 100%;
+}
+.option5 .list-menu button{
+  width: 50px;
 }
 /*-----lab1 design----*/
 .desi{
@@ -2373,5 +2646,5 @@ margin-left: 15px;
   background: #61ba6d;
   margin-left: 500px;
 }
-
+/*=====*/
 

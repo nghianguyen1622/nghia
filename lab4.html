@@ -10,7 +10,7 @@
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Title -->
     <title>17130136 - Nguyễn Văn Nghĩa</title>
 
@@ -19,6 +19,7 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
 </head>
 
@@ -127,8 +128,11 @@
                 <!-- Tab panes -->
                 <div class="tab-content tabs">
                     <div role="tabpanel" class="tab-pane  active" id="Section1">
-                        <h3>Section 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius.</p>
+                        <h6>Yêu cầu:</h6>
+                        <p>&#9755; Tạo một trang Web có nội dung bất kỳ, sử dụng linh hoạt tất cả những phần sau: Input Controls, Navigation, Animations, Default Settings, Guided Actions. <br>
+                            &#9755; Có biểu mẫu liên hệ.
+                          </p>
+
                     </div>
                     <div role="tabpanel" class="tab-pane " id="Section2">
                         <h3>Section 2</h3>
@@ -139,12 +143,12 @@
 
                             <div class = "MENU">
                                 <div class="logoDemo">
-                                    <h4>Laptop New</h4>
+                                    <h4 class="icon-house">Laptop New</h4>
                                 </div>
                                 <ul>
                                     <li><a>Trang chủ</a></li>
                                     <li class="sub">
-                                        <a>Sản phẩm</a>
+                                        <a style="color: #0b0b0b">Sản phẩm</a>
                                         <ul>
                                             <li><a>Macbook</a></li>
                                             <li><a>Dell</a></li>
@@ -160,7 +164,24 @@
                                     <input type = "text" class = "otim" placeholder = "Bạn cần tìm gì?">
 									<button class = "tim" type = "button">Tìm</button>
                                 </div>
-                            </div><br>
+                            </div>
+                            <div class="option">
+                                <div class="w3-content w3-section" style="max-width:780px">
+                                    <img class="mySlides" src="img/bg-img/demo/lab4-170-800x170-(4).png" style="width:100%">
+                                    <img class="mySlides" src="img/bg-img/demo/lab4-170-800x170-(41).png" style="width:100%">
+                                    <img class="mySlides" src="img/bg-img/demo/lab4-A9-800-170-800x170.png" style="width:100%">
+                                    <img class="mySlides" src="img/bg-img/demo/lab4-170-800x170-(28).png" style="width:100%">
+                                </div>
+                                <div class="img-pre" style="max-width: 310px; max-height:80px ">
+                                    <img src="img/bg-img/demo/lab4-390x80-(1).png" >
+                                    <img class="img-pre2.0" src="img/bg-img/demo/lab4-oppo-a52020-390x80.png">
+
+                                </div>
+                            </div>
+                            <div class="dan-lienket">
+                                <h7>Trang chủ / <b>Sản phẩm</b></h7>
+
+                            </div>
                             <div class="option1">
                                 <div class="luachon">
                                     <h6>Lựa chọn phù hợp túi tiền</h6>
@@ -216,9 +237,70 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="option1.1">
+                                <div class="loc">
+                                    <p>Lọc xem theo:</p>
+                                </div>
+                                <div class="chose">
+                                    <div class="mucgia">
+                                        <select>
+                                            <option>Mức giá</option>
+                                            <option><i class="fa"></i>Tất cả mức giá</option>
+                                            <option>Dưới 10 triệu</option>
+                                            <option>10 - 15 triệu</option>
+                                            <option>15 - 20 triệu</option>
+                                            <option>Trên 20 triệu</option>
+                                        </select>
+                                    </div>
+                                    <div class="mucgia">
+                                        <select>
+                                            <option>Ổ cứng</option>
+                                            <option>Bộ nhớ Intel Optane</option>
+                                            <option>SSD 240GB</option>
+                                            <option>SSD 512GB</option>
+                                            <option>HDD 500GB</option>
+                                            <option>HDD 1TB</option>
+                                        </select>
+                                    </div>
+                                    <div class="mucgia">
+                                        <select>
+                                            <option>Ram</option>
+                                            <option>2 GB</option>
+                                            <option>4 GB</option>
+                                            <option>8 GB</option>
+                                            <option>16 GB</option>
+                                        </select>
+                                    </div>
+                                    <div class="mucgia">
+                                        <select>
+                                            <option>Màn hình</option>
+                                            <option>11 inch</option>
+                                            <option>14 inch</option>
+                                            <option>15 inch</option>
+                                            <option>Trên 16 inch</option>
+                                        </select>
+                                    </div>
+                                    <div class="mucgia">
+                                        <select>
+                                            <option>CPU</option>
+                                            <option>AMD</option>
+                                            <option>Celeron</option>
+                                            <option>Pentium</option>
+                                            <option>Core I3</option>
+                                            <option>Core I5</option>
+                                            <option>Core I7</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="option2">
-                                <div class="sell">
-                                    <h6>Laptop giá sốc</h6>
+                                <div class="lean1">
+                                    <div class="sell">
+                                        <h6>Laptop giảm giá</h6>
+                                    </div>
+                                    <div class="option4.1">
+                                        <div id="div3"><p><i class="icon-24-hours"></i>Ưu đãi nhiều</p></div>
+                                    </div>
                                 </div>
                                 <div class="khungDemo">
                                     <div class="khungsp">
@@ -230,6 +312,7 @@
                                     </div>
                                     <div class="thongtinsp">
                                         <p>Laptop Acer Swift 3 SF315 52 38YQ i3 8130U/4GB/1TB/Window10
+                                            <br><a href="https://www.thegioididong.com/laptop/acer-swift-sf315-52-38yq-i3-8130u-4gb-1tb-156f-win">xem chi tiết...</a>
                                         </p>
                                         <span>11.490.000₫</span>
 
@@ -245,6 +328,7 @@
                                         </div>
                                         <div class="thongtinsp">
                                             <p>Laptop Acer Switch 5 SW512 52P 34RS i3 7130U/4GB/128GB
+                                                <br><a href="https://www.thegioididong.com/laptop/acer-switch-sw512-52p-34rs-i3-7130u-4gb-128gb">xem chi tiết...</a>
                                             </p>
                                             <span>15.740.000₫</span>
 
@@ -260,6 +344,7 @@
                                         </div>
                                         <div class="thongtinsp">
                                             <p>Laptop Lenovo Ideapad 330S 14IKBR i5 8250U/4GB/1TB
+                                                <br><a href="https://www.thegioididong.com/laptop/lenovo-ideapad-330s-14ikbr-i5-8250u-4gb-1tb-win10">xem chi tiết...</a>
                                             </p>
                                             <span>12.490.000₫</span>
 
@@ -275,6 +360,7 @@
                                         </div>
                                         <div class="thongtinsp">
                                             <p>Laptop Lenovo ideapad C340 14IWL i3 8145U/8GB/256GB
+                                                <br><a href="https://www.thegioididong.com/laptop/lenovo-ideapad-c340-14iwl-i3-8145u-8gb-256gb-touch">xem chi tiết...</a>
                                             </p>
                                             <span>15.190.000₫</span>
 
@@ -290,6 +376,7 @@
                                         </div>
                                         <div class="thongtinsp">
                                             <p>Laptop Lenovo Ideapad 530s 14IKB i5 8250U/8GB/256GB/2GB
+                                                <br><a href="https://www.thegioididong.com/laptop/acer-aspire-3-a315-54-57pj-i5-8265u-4gb-256gb-win1">xem chi tiết...</a>
                                             </p>
                                             <span>18.490.000₫</span>
 
@@ -299,10 +386,15 @@
                                 </div>
                         </div>
                             <div class="option2">
+                                <div class="lean1">
                                 <div class="sell">
                                     <h6>Laptop bán chạy</h6>
                                 </div>
-                                <div class="khungDemo">
+                                    <div class="option4.1">
+                                        <div id="div2"><p><i class="icon-laptop"></i>Tin dùng trải nghiệm tốt</p></div>
+                                    </div>
+                                </div>
+                                    <div class="khungDemo">
                                     <div class="khungsp">
                                         <div class="img-lap">
                                             <img src="img/bg-img/demo/1.jpg" height="180" width="180"/></div>
@@ -310,8 +402,7 @@
                                             <span>Trả góp 0%</span>
                                         </div>
                                         <div class="thongtinsp">
-                                            <p>Laptop Acer Aspire 3 A315 54 57PJ i5 8265U/4GB/256GB
-                                            </p>
+                                            <p>Laptop Acer Aspire 3 A315 54 57PJ i5 8265U/4GB/256GB<br><a href="https://www.thegioididong.com/laptop/acer-aspire-3-a315-54-57pj-i5-8265u-4gb-256gb-win1">xem chi tiết...</a></p>
                                             <span>12.990.000₫</span>
 
                                         </div>
@@ -325,6 +416,7 @@
                                         </div>
                                         <div class="thongtinsp">
                                             <p>Laptop Lenovo ideapad S145 15IWL i5 8265U/8GB/256GB/2GB
+                                                <br><a href="https://www.thegioididong.com/laptop/lenovo-ideapad-s145-15iwl-i5-8265u-8gb-256gb-mx110">xem chi tiết...</a>
                                             </p>
                                             <span>14.790.000₫</span>
 
@@ -339,6 +431,7 @@
                                         </div>
                                         <div class="thongtinsp">
                                             <p>Laptop Lenovo IdeaPad S145 15IKB i3 7020U/4GB/256GB
+                                                <br><a href="https://www.thegioididong.com/laptop/lenovo-ideapad-15ikb-i3-7020u-4gb-256gb-win10-81v">xem chi tiết...</a>
                                             </p>
                                             <span>9.990.000₫</span>
 
@@ -353,6 +446,7 @@
                                         </div>
                                         <div class="thongtinsp">
                                             <p>Laptop Asus VivoBook A412F i3 8145U/4GB+32GB/512GB
+                                                <br><a href="https://www.thegioididong.com/laptop/acer-aspire-3-a315-54-57pj-i5-8265u-4gb-256gb-win1">xem chi tiết...</a>
                                             </p>
                                             <span>13.490.000₫</span>
 
@@ -367,6 +461,7 @@
                                         </div>
                                         <div class="thongtinsp">
                                             <p>Laptop Acer Aspire A315 34 P3LC N5000/4GB/256GB
+                                                <br><a href="https://www.thegioididong.com/laptop/acer-aspire-3-a315-54-57pj-i5-8265u-4gb-256gb-win1">xem chi tiết...</a>
                                             </p>
                                             <span>7.790.000₫ </span>
                                         </div>
@@ -374,83 +469,54 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="option2">
-                                <div class="sell">
-                                    <h6>Laptop bán chạy</h6>
-                                </div>
-                                <div class="khungDemo">
-                                    <div class="khungsp">
-                                        <div class="img-lap">
-                                            <img src="img/bg-img/demo/1.jpg" height="180" width="180"/></div>
-                                        <div class="khuyenmaiDemo">
-                                            <span>Trả góp 0%</span>
-                                        </div>
-                                        <div class="thongtinsp">
-                                            <p>Laptop Acer Aspire 3 A315 54 57PJ i5 8265U/4GB/256GB
-                                            </p>
-                                            <span>12.990.000₫</span>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="khungsp">
-                                        <div class="img-lap">
-                                            <img src="img/bg-img/demo/2.jpg" height="180" width="180"/></div>
-                                        <div class="khuyenmaiDemo">
-                                            <span>	&#9660;Giảm 300.000đ</span>
-                                        </div>
-                                        <div class="thongtinsp">
-                                            <p>Laptop Lenovo ideapad S145 15IWL i5 8265U/8GB/256GB/2GB
-                                            </p>
-                                            <span>14.790.000₫</span>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="khungsp">
-                                        <div class="img-lap">
-                                            <img src="img/bg-img/demo/3.jpg" height="180" width="180"/></div>
-                                        <div class="khuyenmaiDemo">
-                                            <span>Trả góp 0%</span>
-                                        </div>
-                                        <div class="thongtinsp">
-                                            <p>Laptop Lenovo IdeaPad S145 15IKB i3 7020U/4GB/256GB
-                                            </p>
-                                            <span>9.990.000₫</span>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="khungsp">
-                                        <div class="img-lap">
-                                            <img src="img/bg-img/demo/4.jpg" height="180" width="180"/></div>
-                                        <div class="khuyenmaiDemo">
-                                            <span>Trả góp 0%</span>
-                                        </div>
-                                        <div class="thongtinsp">
-                                            <p>Laptop Asus VivoBook A412F i3 8145U/4GB+32GB/512GB
-                                            </p>
-                                            <span>13.490.000₫</span>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="khungsp">
-                                        <div class="img-lap">
-                                            <img src="img/bg-img/demo/5.jpg" height="180" width="180"/></div>
-                                        <div class="khuyenmaiDemo">
-                                            <span>&#9660;Giảm 200.000đ</span>
-                                        </div>
-                                        <div class="thongtinsp">
-                                            <p>Laptop Acer Aspire A315 34 P3LC N5000/4GB/256GB
-                                            </p>
-                                            <span>7.790.000₫ </span>
-                                        </div>
-
-                                    </div>
+                            <div class="option3">
+                                <div class="nex-prewiew">
+                                    <input type="button" class="truoc" value="<">
+                                    <input type="button" class="so" value="1" style="background: #1e7e34; color: white">
+                                    <input type="button" class="so1" value="2">
+                                    <input type="button" class="so2" value="3">
+                                    <input type="button" class="so3" value="4">
+                                    <input type="button" class="sau" value=">">
                                 </div>
                             </div>
+                            <div class="option4">
+                                <div id="div1"><p>Laptop New: <i class="icon-placeholder"></i>địa chỉ 241/2A, Lê Hồng Phong, TĐH, Tx.Dĩ An, Bình Dương</p></div>
+                            </div>
+                            <div class="option5">
+                                <footer class="footer ">
+                                                        <div class="footer-widget12">
+                                                            <h6>Hỗ trợ khách hàng</h6>
+                                                            <div class="list-menu">
+                                                                <p>Gọi mua hàng: 1800.1060 </p>
+                                                                <p>Gọi khiếu nại: 1800.1062 </p>
+                                                                <p>Gọi bảo hành: 1800.1064</p>
+                                                                <p>Kỹ thuật: 1800.1763 </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer-widget12">
+                                                            <h6>Liên hệ</h6>
+                                                            <div class="list-menu">
+                                                                <p>Địa chỉ:241/2A, Lê Hồng Phong, TĐH, Tx.Dĩ An, Bình Dương</p>
+                                                                <p>Sđt: 0368023380</p>
+                                                                <p>Email: 17130136@st.hcmuaf.edu.vn</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer-widget12">
+                                                         <h6>Contact</h6>
+                                                              <div class="list-menu">
+                                                                  <input type="number" placeholder="Số điện thoại">
+                                                                  <input type="email" placeholder="Email">
+                                                                  <textarea placeholder="Ý kiến của bạn"></textarea>
+                                                                  <div class="ykien">
+                                                                  <button>Gửi</button>
+                                                                  </div>
 
+
+                                                              </div>
+                                                        </div>
+
+                                </footer>
+                            </div>
                         </div>
                             </div>
                 </div>
@@ -458,6 +524,22 @@
         </div>
     </div>
 </div>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+</script>
 
 <script src="js/jquery/jquery-2.2.4.min.js"></script>
 <!-- Popper js -->
