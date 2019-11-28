@@ -15,7 +15,7 @@
   padding: 0; }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 14px; }
 
 h1,
@@ -29,10 +29,18 @@ h6 {
   font-weight: 700; }
 
 p {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #606060;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.7;
   font-weight: 500; }
+th{
+  font-weight: 500;
+  font-size: 15px;
+}
+td{
+  font-size: 14px;
+}
 
 a,
 a:hover,
@@ -64,7 +72,7 @@ img {
   margin-top: 30px !important; }
 
 .mt-50 {
-  margin-top: 50px !important; }
+  margin-top: 10px !important; }
 
 .mt-70 {
   margin-top: 70px !important; }
@@ -85,7 +93,7 @@ img {
   margin-bottom: 70px !important; }
 
 .mb-100 {
-  margin-bottom: 100px !important; }
+  margin-bottom: 40px !important; }
 
 .ml-15 {
   margin-left: 15px !important; }
@@ -127,7 +135,7 @@ img {
   padding-bottom: 100px; }
 
 .section-padding-100-0 {
-  padding-top: 100px;
+  padding-top: 10px;
   padding-bottom: 0; }
 
 .section-padding-0-100 {
@@ -359,7 +367,7 @@ img {
           padding: 0;
           padding-left: 2em; } }
       .header-area .academy-main-menu .classy-navbar .classynav ul li a {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         text-transform: uppercase; }
 .header-area .academy-main-menu .classy-navbar .classynav ul li.active a {
@@ -890,15 +898,15 @@ img {
   position: relative;
   z-index: 10;
   width: 100%;
-  height: 200px; }
+  height: 160px; }
   .breadcumb-area .bradcumbContent {
-    width: 500px;
-    height: 110px;
+    width: 400px;
+    height: 70px;
     background: #61ba6d;
     background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
     background: linear-gradient(to right, #61ba6d, #83c331);
     position: absolute;
-    bottom: -60px;
+    bottom: -20px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     left: 50%;
@@ -906,13 +914,13 @@ img {
     @media only screen and (max-width: 767px) {
       .breadcumb-area .bradcumbContent {
         width: 280px; } }
-    .breadcumb-area .bradcumbContent h2 {
+    .breadcumb-area .bradcumbContent h4 {
       text-align: center;
-      line-height: 110px;
-      font-size: 36px;
+      line-height: 70px;
+      font-size: 23px;
       color: #ffffff; }
       @media only screen and (max-width: 767px) {
-        .breadcumb-area .bradcumbContent h2 {
+        .breadcumb-area .bradcumbContent h4 {
           font-size: 24px; } }
 
 /* About Us Content Area CSS */
@@ -1241,7 +1249,7 @@ img {
         background: #f5f7fa;
         color: #141414; }
   .academy-tabs-content .tab-content h6 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 /*# sourceMappingURL=style.css.map */
@@ -1250,9 +1258,16 @@ img {
     margin-top: -30px;
   }
   .col-lg-6 {
-    margin-left: 130px;
+    /*margin-left: 130px;*/
     margin-top: -40px;
+    float: left;
+    clear: right;
 
+  }
+  .img-about{
+    float: left;
+    margin-left: 10px;
+    margin-top: -40px;
   }
  .academy-tabs-content {
   position: relative;
@@ -1348,14 +1363,14 @@ a:hover,a:focus{
   border: none;
   border-bottom: 1px solid #61ba6d;
   margin-top: 40px;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   height: 33px;
-  width: 900px;
+  width: 1100px;
 }
 .tab .nav-tabs li a{
   padding: 10px 20px;
   margin: 0 10px -1px 0;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: #293241;
   text-transform: uppercase;
@@ -1389,7 +1404,7 @@ a:hover,a:focus{
 .tab .nav-tabs li a:hover:before{ transform: scaleX(1); }
 .tab .tab-content{
   padding: 10px;
-  font-size: 17px;
+  font-size: 16px;
   color: #6f6f6f;
   line-height: 30px;
   letter-spacing: 1px;
@@ -1426,9 +1441,9 @@ a:hover,a:focus{
   border: none;
   border-bottom: 1px solid #61ba6d;
   margin-top: 100px;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   height: 33px;
-  width: 900px;
+  width: 1100px;
 }
 .tab .nav-ta li a{
   padding: 10px 20px;
@@ -1509,12 +1524,12 @@ a:hover,a:focus{
   margin-top: 30px;
   margin-left: 20px;
   height: 49px;
-  width: 900px;
+  width: 1100px;
 }
 .tab .nav-tas li a{
   padding: 10px 20px;
   margin: 0 10px -1px 0;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: #293241;
   text-transform: uppercase;
@@ -1548,7 +1563,7 @@ a:hover,a:focus{
 .tab .nav-tas li a:hover:before{ transform: scaleX(1); }
 .tab .tab-content{
   padding: 10px;
-  font-size: 17px;
+  font-size: 16px;
   color: #6f6f6f;
   line-height: 30px;
   letter-spacing: 1px;
@@ -1665,14 +1680,14 @@ a:hover,a:focus{
   border: none;
   border-bottom: 1px solid #61ba6d;
   margin-top: 50px;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   height: 33px;
-  width: 900px;
+  width: 1100px;
 }
 .tab .nav-ts li a{
   padding: 10px 20px;
   margin: 0 10px -1px 0;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: #293241;
   text-transform: uppercase;
@@ -1945,7 +1960,7 @@ margin-left: 15px;
   float: left;
   margin-left: 300px;
   font-size: 25px;
-  color: #61ba6d;
+  color: #e0a800;
 }
 #Img-samsung{
   float: left;

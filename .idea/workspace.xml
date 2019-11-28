@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc0555f-00d1-42e8-bd79-d8eb0a39787b" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,10 +15,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1SsVfNuwHQ2h8Zyubld3v5QeaZm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../template_webdienthoai" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -32,15 +36,15 @@
       <recent name="D:\nguyen van nghia\academy\css" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -80,7 +84,10 @@
       <workItem from="1574010357508" duration="10606000" />
       <workItem from="1574142851298" duration="960000" />
       <workItem from="1574253824569" duration="5489000" />
-      <workItem from="1574261396436" duration="14251000" />
+      <workItem from="1574261396436" duration="24851000" />
+      <workItem from="1574394416637" duration="844000" />
+      <workItem from="1574681915283" duration="137000" />
+      <workItem from="1574958868803" duration="12844000" />
     </task>
     <servers />
   </component>
