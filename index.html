@@ -19,7 +19,42 @@
 
 </head>
 
-<body>
+<body onload="time()">
+
+<script type="text/javascript">
+
+    function time() {
+        var today = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Chủ Nhật";
+        weekday[1] = "Thứ Hai";
+        weekday[2] = "Thứ Ba";
+        weekday[3] = "Thứ Tư";
+        weekday[4] = "Thứ Năm";
+        weekday[5] = "Thứ Sáu";
+        weekday[6] = "Thứ Bảy";
+        var day = weekday[today.getDay()];
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        nowTime = h + ":" + m + ":" + s;
+        if (dd < 10) { dd = '0' + dd} if (mm < 10) { mm = '0' + mm} today = day + ', ' + dd + '/' + mm + '/' + yyyy;
+        tmp = '<i class="fa fa-clock-o" aria-hidden="true"></i> <span class="date">' + today + ' | ' + nowTime + '</span>';
+        document.getElementById("clock").innerHTML = tmp;
+        clocktime = setTimeout("time()", "1000", "Javascript");
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    }
+</script>
     <!-- ##### Preloader ##### -->
     <div id="preloader">
         <i class="circle-preloader"></i>
@@ -36,9 +71,11 @@
                         <div class="header-content h-100 d-flex align-items-center justify-content-between">
                             <div class="academy-logo">
                                 <a href="index.html">
-                                    <h4>Nguyễn Văn Nghĩa</h4>
+                                    <h4 >Nguyễn Văn Nghĩa</h4>
+
                                 </a>
                             </div>
+                            <div id="clock" ></div>
 
                         </div>
                     </div>
@@ -82,8 +119,11 @@
 
                         <!-- Calling Info -->
                         <div class="calling-info">
+
                             <div class="call-center">
+
                                 <a href="tel:+84368023380"><i class="icon-telephone-2"></i> <span>(+84) 368 023 380 </span></a>
+
                             </div>
                         </div>
                     </nav>
@@ -98,7 +138,7 @@
         <div class="hero-slides owl-carousel">
 
             <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg-1.jpg);">
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -117,7 +157,7 @@
 
 
             <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg-1.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -130,6 +170,22 @@
                     </div>
                 </div>
             </div>
+
+<!--            me-->
+            <div class="single-hero-slide bg-img"  style="background-image: url(img/bg-img/me3.JPG);" >
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h4 data-animation="fadeInUp" data-delay="100ms">Hello you. I'm </h4>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">Nguyễn Văn Nghĩa <br> <em> ID: 17130136</em></h2>
+                                <!--                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Read More</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <!-- Single Hero Slide -->
 <!--            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg-1.jpg);">-->
@@ -160,21 +216,21 @@
                             <div class="col-12 col-md-4">
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <i class="icon-agenda-1"></i>
-                                    <h5>Online Courses</h5>
+                                    <h5>Hội nhập</h5>
                                 </div>
                             </div>
                             <!-- Single Top Features -->
                             <div class="col-12 col-md-4">
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <i class="icon-assistance"></i>
-                                    <h5>Amazing Teachers</h5>
+                                    <h5>Phát triển</h5>
                                 </div>
                             </div>
                             <!-- Single Top Features -->
                             <div class="col-12 col-md-4">
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <i class="icon-telephone-3"></i>
-                                    <h5>Great Support</h5>
+                                    <h5>Kết nối</h5>
                                 </div>
                             </div>
                         </div>
@@ -196,8 +252,8 @@
                             <i class="icon-id-card"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Business School</h4>
-                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                            <h4>Mục tiêu</h4>
+                            <p>Xác định mục tiêu của bản thân, tiến hành các bước cơ bản để hoàn thành.</p>
                         </div>
                     </div>
                 </div>
@@ -208,8 +264,9 @@
                             <i class="icon-worldwide"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Marketing</h4>
-                            <p>Lacinia, lacinia la cus non, fermen tum nisi.</p>
+                            <h4>
+                                Tiếp thị</h4>
+                            <p>Lựa chọn chiến lược phát triến, tiếp cận khách hàng.</p>
                         </div>
                     </div>
                 </div>
@@ -220,8 +277,8 @@
                             <i class="icon-map"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Photography</h4>
-                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                            <h4>Vị trí</h4>
+                            <p>Xây dựng, mở rộng mối quan hệ. Khẳng định vị trí trong xã hội.</p>
                         </div>
                     </div>
                 </div>
@@ -232,8 +289,9 @@
                             <i class="icon-like"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Social Media</h4>
-                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                            <h4>Truyền thông xã hội</h4>
+                            <p>Các trang mạng phương tiện truyền thông xã hội là cách tuyệt vời để giúp quý vị giữ liên lạc
+                                với bạn bè và người thân yêu...</p>
                         </div>
                     </div>
                 </div>
@@ -244,8 +302,8 @@
                             <i class="icon-responsive"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Development</h4>
-                            <p>Lacinia, lacinia la cus non, fermen tum nisi.</p>
+                            <h4>Phát triển</h4>
+                            <p>Phát triển về mọi mặt trong cuộc sống, nâng cao, phát triển toàn diện.</p>
                         </div>
                     </div>
                 </div>
@@ -256,8 +314,8 @@
                             <i class="icon-message"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Design</h4>
-                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                            <h4>Thiết kế</h4>
+                            <p>Xác định mục tiêu thiết kế, linh hoạt chuyển biến thích hợp.</p>
                         </div>
                     </div>
                 </div>
@@ -272,8 +330,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto white wow fadeInUp" data-wow-delay="300ms">
-                        <span>our testimonials</span>
-                        <h3>See what our satisfied customers are saying about us</h3>
+                        <span>Lắng nghe, học tập và phát triển</span>
+                        <h3>Điều tuyệt vời nhất là khi bạn hiểu nó</h3>
                     </div>
                 </div>
             </div>
@@ -282,12 +340,12 @@
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="400ms">
                         <div class="testimonial-thumb">
-                            <img src="img/bg-img/t1.jpg" alt="">
+                            <img src="img/bg-img/donaltrum.jpeg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>Great teachers</h5>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-                            <h6><span>Maria Smith,</span> Student</h6>
+                            <h5>Donald Trump</h5>
+                            <p>"Để trở thành người chiến thắng, bạn cần biết khi nào là đủ. Đôi khi trong cuộc sống, bạn phải từ bỏ cuộc chiến và chuyển sang mục tiêu mới mang lại hiệu quả hơn"</p>
+                            <h6><span>Donald Trump,</span> Tổng thống Mỹ</h6>
                         </div>
                     </div>
                 </div>
@@ -295,12 +353,13 @@
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="500ms">
                         <div class="testimonial-thumb">
-                            <img src="img/bg-img/t2.jpg" alt="">
+                            <img src="img/bg-img/lygiathanh.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>Easy and user friendly courses</h5>
-                            <p>Retiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</p>
-                            <h6><span>Shawn Gaines,</span> Student</h6>
+                            <h5>Lý Gia Thành</h5>
+                            <p>"Tầm nhìn có lẽ là sức mạnh lớn nhất của chúng ta. Nó giúp chúng ta nhận thức được sức mạnh và tính liên tục của tư duy qua nhiều thế kỷ, giúp chúng ta hướng đến tương lai và định hình những điều chưa biết".</p>
+
+                            <h6><span>Lý Gia Thành,</span> Tỷ phú giàu nhất Hồng Kông</h6>
                         </div>
                     </div>
                 </div>
@@ -308,12 +367,13 @@
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="600ms">
                         <div class="testimonial-thumb">
-                            <img src="img/bg-img/t3.jpg" alt="">
+                            <img src="img/bg-img/steve.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>I just love the courses here</h5>
-                            <p>Nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.</p>
-                            <h6><span>Ross Cooper,</span> Student</h6>
+                            <h5>Steve Jobs </h5>
+                            <p>"Đừng để để tiếng ồn từ các ý kiến khác nhấn chìm tiếng nói sâu thẳm trong lòng bạn. Và điều quan trọng nhất là hãy can đảm để đi theo tiếng gọi của trái tim và trực giác chính mình".</p>
+
+                            <h6><span>Steve Jobs,</span> Cựu CEO Apple</h6>
                         </div>
                     </div>
                 </div>
@@ -321,12 +381,12 @@
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="700ms">
                         <div class="testimonial-thumb">
-                            <img src="img/bg-img/t4.jpg" alt="">
+                            <img src="img/bg-img/michael-dell.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>One good academy</h5>
-                            <p>Vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibu lum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul. Etiam nec odio vestibulum est mat tis effic iturut magnaNec odio vestibulum est mattis effic iturut magna.</p>
-                            <h6><span>James Williams,</span> Student</h6>
+                            <h5>Michael Dell </h5>
+                            <p>"Cho dù bạn đã tìm ra lĩnh vực nghề nghiệp yêu thích của mình hay vẫn đang tìm kiếm, thì niềm đam mê sẽ là ngọn lửa thúc đẩy công việc của bạn".</p>
+                            <h6><span>Michael Dell ,</span> Nhà sáng lập hãng máy tính Dell</h6>
                         </div>
                     </div>
                 </div>
@@ -334,7 +394,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="load-more-btn text-center wow fadeInUp" data-wow-delay="800ms">
-                        <a href="#" class="btn academy-btn">See More</a>
+                        <a href="#" class="btn academy-btn">Xem thêm</a>
                     </div>
                 </div>
             </div>
@@ -348,8 +408,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                        <span>The Best</span>
-                        <h3>Top Popular Courses</h3>
+                        <span>Tiến hành</span>
+                        <h3>Lựa chọn hữu ích cho bạn</h3>
                     </div>
                 </div>
             </div>
@@ -359,8 +419,8 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
                         <div class="popular-course-content">
-                            <h5>Business for begginers</h5>
-                            <span>By Simon Smith   |  March 18, 2018</span>
+                            <h5>Khóa tiếng anh đầu ra</h5>
+                            <span>Thời gian mở   |  12/2/2020</span>
                             <div class="course-ratings">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -368,8 +428,8 @@
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star-o" aria-hidden="true"></i>
                             </div>
-                            <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod.</p>
-                            <a href="#" class="btn academy-btn btn-sm">See More</a>
+                            <p>Trình độ Anh ngữ B1 là cấp độ Anh ngữ thứ ba trong Khung Tham chiếu Ngôn ngữ Chung Châu Âu (CEFR), một định nghĩa về các cấp độ ngôn ngữ khác nhau được soạn bởi Hội đồng Châu Âu.</p>
+                            <a href="#" class="btn academy-btn btn-sm">Đăng kí</a>
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-1.jpg);"></div>
                     </div>
@@ -379,8 +439,8 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="500ms">
                         <div class="popular-course-content">
-                            <h5>Advanced HTML5</h5>
-                            <span>By Simon Smith   |  March 18, 2018</span>
+                            <h5>Khóa tin học đầu ra</h5>
+                            <span>Thời gian mở   |  22/2/2020</span>
                             <div class="course-ratings">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -388,8 +448,8 @@
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star-o" aria-hidden="true"></i>
                             </div>
-                            <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod.</p>
-                            <a href="#" class="btn academy-btn btn-sm">See More</a>
+                            <p>Nhằm hướng đến mục tiêu sau khi tốt nghiệp sinh viên sẽ có kỹ năng tin học thành thạo, Viện Đào tạo đã áp dụng chuẩn đầu ra trình độ Tin học theo chương trình quốc tế. Cụ thể sinh viên tốt nghiệp phải đạt chứng chỉ tin học quốc tế IC3, MOS.</p>
+                            <a href="#" class="btn academy-btn btn-sm">Đăng kí</a>
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-2.jpg);"></div>
                     </div>
@@ -399,8 +459,8 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="600ms">
                         <div class="popular-course-content">
-                            <h5>Marketing 101</h5>
-                            <span>By Simon Smith   |  March 18, 2018</span>
+                            <h5>Khóa học Full Stack Developer</h5>
+                            <span>Dự kiến mở   |  1/1/2020</span>
                             <div class="course-ratings">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -408,8 +468,8 @@
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star-o" aria-hidden="true"></i>
                             </div>
-                            <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod.</p>
-                            <a href="#" class="btn academy-btn btn-sm">See More</a>
+                            <p>Full Stack Developer là những lập trình viên có đầy đủ các kĩ năng tổng hợp bao gồm Server, Network, Data Modeling, Logic nghiệp vụ, API, Restful, User Interface (Web + App) & phải hiểu rõ tâm lý khách hàng & mong muốn của họ. Để trở thành một Full Stack Developer, đòi hỏi người học phải phát triển đầy đủ các kĩ năng, cũng như rèn luyện ở các project thực tế trên thị trường.</p>
+                            <a href="#" class="btn academy-btn btn-sm">Đăng kí</a>
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-3.jpg);"></div>
                     </div>
@@ -419,8 +479,8 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="700ms">
                         <div class="popular-course-content">
-                            <h5>Business for begginers</h5>
-                            <span>By Simon Smith   |  March 18, 2018</span>
+                            <h5>Khóa học thiết kế đồ họa</h5>
+                            <span>Thời gian mở   |  25/3/2020</span>
                             <div class="course-ratings">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -428,8 +488,10 @@
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star-o" aria-hidden="true"></i>
                             </div>
-                            <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod.</p>
-                            <a href="#" class="btn academy-btn btn-sm">See More</a>
+                            <p>Trang bị cho học viên kiến thức về các phần mềm thiết kế đồ họa trong ngành thiết kế in ấn và quảng cáo: Adobe Photoshop, Adobe Illustrator, Corel, Adobe Indesign. Kiến thức về kỹ năng thiết kế đồ họa và xây dựng thương hiệu
+                                Học viên sau khi hoàn thành khóa học sẽ nắm vững các công cụ thiết kế, có khả năng vẽ phác thảo; nắm được các kiến thức về Hình khối, Màu sắc, Bố cục, Typography,  Ý tưởng
+                            </p>
+                            <a href="#" class="btn academy-btn btn-sm">Đăng kí</a>
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-4.jpg);"></div>
                     </div>
@@ -440,36 +502,25 @@
     <!-- ##### Top Popular Courses Area End ##### -->
 
     <!-- ##### Partner Area Start ##### -->
-    <div class="partner-area section-padding-0-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="partners-logo d-flex align-items-center justify-content-between flex-wrap">
-                        <a href="#"><img src="img/clients-img/partner-1.png" alt=""></a>
-                        <a href="#"><img src="img/clients-img/partner-2.png" alt=""></a>
-                        <a href="#"><img src="img/clients-img/partner-3.png" alt=""></a>
-                        <a href="#"><img src="img/clients-img/partner-4.png" alt=""></a>
-                        <a href="#"><img src="img/clients-img/partner-5.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <div class="partner-area section-padding-0-100">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="partners-logo d-flex align-items-center justify-content-between flex-wrap">-->
+<!--                        <a href="#"><img src="img/clients-img/partner-1.png" alt=""></a>-->
+<!--                        <a href="#"><img src="img/clients-img/partner-2.png" alt=""></a>-->
+<!--                        <a href="#"><img src="img/clients-img/partner-3.png" alt=""></a>-->
+<!--                        <a href="#"><img src="img/clients-img/partner-4.png" alt=""></a>-->
+<!--                        <a href="#"><img src="img/clients-img/partner-5.png" alt=""></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <!-- ##### Partner Area End ##### -->
 
     <!-- ##### CTA Area Start ##### -->
-    <div class="call-to-action-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="cta-content d-flex align-items-center justify-content-between flex-wrap">
-                        <h3>Do you want to enrole at our Academy? Get in touch!</h3>
-                        <a href="#" class="btn academy-btn">See More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- ##### CTA Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->

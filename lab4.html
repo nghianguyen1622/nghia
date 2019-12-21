@@ -23,7 +23,41 @@
 
 </head>
 
-<body>
+<body onload="time()">
+<script type="text/javascript">
+
+    function time() {
+        var today = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Chủ Nhật";
+        weekday[1] = "Thứ Hai";
+        weekday[2] = "Thứ Ba";
+        weekday[3] = "Thứ Tư";
+        weekday[4] = "Thứ Năm";
+        weekday[5] = "Thứ Sáu";
+        weekday[6] = "Thứ Bảy";
+        var day = weekday[today.getDay()];
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        nowTime = h + ":" + m + ":" + s;
+        if (dd < 10) { dd = '0' + dd} if (mm < 10) { mm = '0' + mm} today = day + ', ' + dd + '/' + mm + '/' + yyyy;
+        tmp = '<i class="fa fa-clock-o" aria-hidden="true"></i> <span class="date">' + today + ' | ' + nowTime + '</span>';
+        document.getElementById("clock").innerHTML = tmp;
+        clocktime = setTimeout("time()", "1000", "Javascript");
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    }
+</script>
 <!-- ##### Preloader ##### -->
 <div id="preloader">
     <i class="circle-preloader"></i>
@@ -38,12 +72,8 @@
             <div class="row h-100">
                 <div class="col-12 h-100">
                     <div class="header-content h-100 d-flex align-items-center justify-content-between">
-                        <div class="academy-logo">
-                            <a href="index.html">
-                                <h4>Nguyễn Văn Nghĩa</h4>
-                            </a>
-                        </div>
-
+                        <div class="academy-logo"></div>
+                        <div id="clock" ></div>
                     </div>
                 </div>
             </div>
@@ -135,9 +165,65 @@
 
                     </div>
                     <div role="tabpanel" class="tab-pane " id="Section2">
-                        <h3>Section 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius.</p>
-                    </div>
+                        <div class="academy-tab-content">
+                            <!-- Tab Text -->
+                            <div class="academy-tab-text">
+                                <div class="desi">
+                                    <div class="load">
+                                        <p>&#9755; Thiết kế trên giấy</p>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="img-desi">
+                                        <img src="img/labs/lab1/lap1.1.jpg" /></div>
+                                    <div class="down">
+                                        <a href="img/labs/lab1/lap1.1.jpg" download=""><button type="button" class="btn btn-info dowload1">
+                                            <i class="fa fa-cloud-download"></i>Download</button></a>
+                                    </div>
+                                </div>
+                                <div class="desi">
+                                    <div class="load">
+                                        <p>&#9755; Thiết kế trên Figma</p>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="img-desi">
+                                        <img src="img/labs/lab4/lab4-1.png" /></div>
+                                    <div class="down">
+                                        <a href="img/labs/lab4/lab4.fig" download=""><button type="button" class="btn btn-info dowload1">
+                                            <i class="fa fa-cloud-download"></i> Download
+                                        </button></a>
+                                    </div>
+                                </div>
+                                <div class="desi">
+                                    <div class="load">
+                                        <p>&#9755; Thiết kế trên Figma</p>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="img-desi">
+                                        <img src="img/labs/lab4/lab4-2.png" /></div>
+                                    <div class="down">
+                                        <a href="img/labs/lab4/lab4.fig" download=""><button type="button" class="btn btn-info dowload1">
+                                            <i class="fa fa-cloud-download"></i> Download
+                                        </button></a>
+                                    </div>
+                                </div>
+                                <div class="desi1">
+                                    <div class="load1">
+                                        <p>&#9755; Thiết kế</p>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="down1">
+                                        <a href="img/labs/lab1.rar" download=""><button type="button" class="btn btn-info dowload1">
+                                            <i class="fa fa-cloud-download"></i> Download All
+                                        </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     <div role="tabpanel" class="tab-pane" id="Section3">
                         <div class = "containerDemo">
 

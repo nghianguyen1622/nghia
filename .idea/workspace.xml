@@ -23,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../template_webdienthoai" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,11 +87,20 @@
       <workItem from="1574261396436" duration="24851000" />
       <workItem from="1574394416637" duration="844000" />
       <workItem from="1574681915283" duration="137000" />
-      <workItem from="1574958868803" duration="12844000" />
+      <workItem from="1574958868803" duration="13136000" />
+      <workItem from="1575301225377" duration="24000" />
+      <workItem from="1576603013814" duration="658000" />
+      <workItem from="1576943273524" duration="14608000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1576946719189">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1576946719189" />
   </component>
 </project>
