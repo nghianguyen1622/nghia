@@ -2761,3 +2761,88 @@ margin-left: 15px;
 }
 /*=====*/
 
+/*---lab5---*/
+/*implement*/
+
+.lab5-imple{
+  float: left;
+  margin-top: 20px;
+  margin-left: -130px;
+  width: 1350px;
+}
+.lab5-imple .card-header{
+  height: 30px;
+}
+.lab5-imple .card-header a{
+  float: left;
+  margin-top: -12px;
+}
+.card-body{
+  width: 1050px;
+  height: 150px;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*border: 1px solid black;*/
+  box-shadow: 3px 0 15px -1px rgba(0, 0, 0, 0.15);
+}
+.card-body .left-lap5im{
+  float: left;
+  /*margin-left: 30px;*/
+  width: 40%;
+  /*border: 1px solid black;*/
+}
+.card-body .right-lap5im{
+  float: left;
+  width: 30%;
+}
+.card-body .result-lab5im{
+  float: left;
+  width: 30%;
+  text-align: center;
+
+}
+.lab5-imple .card-body a{
+  color: #28a745;
+
+}
+/*=============*/
+.lab5-imple .card-body1{
+  width: 1050px;
+  height: 260px;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*border: 1px solid black;*/
+  box-shadow: 3px 0 15px -1px rgba(0, 0, 0, 0.15);
+}
+.card-body1 .left-lap5im1{
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 37%;
+  /*border: 1px solid black;*/
+}
+.card-body1 .right-lap5im1{
+  float: left;
+  margin-top: 20px;
+  width: 30%;
+}
+.card-body1 .result-lab5im1{
+  float: left;
+  margin-top: 20px;
+  width: 30%;
+  text-align: center;
+}
+.lab5-imple .card-body1 a{
+  color: #28a745;
+
+}
+/*=====*/
+.card-body3 span{
+  margin-left: 30px;
+}
+.card-body2 span{
+  margin-left: 30px;
+}
+
